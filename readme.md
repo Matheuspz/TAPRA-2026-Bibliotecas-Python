@@ -10,23 +10,21 @@
 
 ### Ela é mais indicada para bancos relacionais ou não relacionais?
 - Pyodbc
-
 >Bancos relacionais
-
 - SQLAlchemy
-
 >Bancos relacionais
-
 
 ### A biblioteca trabalha com SQL puro, ORM ou ambos?
+- Pyodbc
+> SQL Puro
+- SQLAlchemy
+> ORM
 
 ### Como é feita a instalação?
 - Pyodbc
-
 ```
 pip install pyodbc
 ```
-
 - SQLAlchemy
 ```
 pip install SQLAlchemy
