@@ -6,8 +6,6 @@
 - SQLAlchemy
 >Fornecer uma forma eficiente, flexível e de alto desempenho para interagir com bancos de dados relacionais usando a linguagem Python
 
-
-
 ### Que tipo de banco de dados ela permite acessar?
 
 ### Ela é mais indicada para bancos relacionais ou não relacionais?
@@ -33,7 +31,6 @@ pip install pyodbc
 ```
 pip install SQLAlchemy
 ```
-
 ### Como é criado um exemplo simples de conexão?
 - Pyodbc
 ```
@@ -76,13 +73,6 @@ class Address(Base):
     user: Mapped["User"] = relationship(back_populates="addresses")
     def __repr__(self) -> str:
         return f"Address(id={self.id!r}, email_address={self.email_address!r})"
-```
-### Como é criado um exemplo simples de conexão?
-- Pyodbc
-```
-import pyodbc
-cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=localhost;DATABASE=testdb;UID=me;PWD=pass')
-cursor = cnxn.cursor()
 ```
 ### Como executar uma consulta *SELECT* simples?
 - Pyodbc
