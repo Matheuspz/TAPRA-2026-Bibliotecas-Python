@@ -1,6 +1,10 @@
 # TAPRA-2026-Bibliotecas-Python
 
 ### Qual é o objetivo principal da biblioteca?
+- Pyodbc
+Permitir que aplicativos escritos em Python se conectem e interajam com bancos de dados relacionais usando o padrão ODBC
+- SQLAlchemy
+Fornecer uma forma eficiente, flexível e de alto desempenho para interagir com bancos de dados relacionais usando a linguagem Python
 
 ### Que tipo de banco de dados ela permite acessar?
 
