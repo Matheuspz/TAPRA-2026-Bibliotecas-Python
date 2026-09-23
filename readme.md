@@ -2,9 +2,19 @@
 
 ### Qual é o objetivo principal da biblioteca?
 
+
+
 ### Que tipo de banco de dados ela permite acessar?
 
 ### Ela é mais indicada para bancos relacionais ou não relacionais?
+- Pyodbc
+
+>Bancos relacionais
+
+- SQLAlchemy
+
+>Bancos relacionais
+
 
 ### A biblioteca trabalha com SQL puro, ORM ou ambos?
 
@@ -48,7 +58,6 @@ class Address(Base):
     def __repr__(self) -> str:
         return f"Address(id={self.id!r}, email_address={self.email_address!r})"
 ```
-
 ### Como é criado um exemplo simples de conexão?
 - Pyodbc
 ```
