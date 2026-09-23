@@ -29,6 +29,21 @@
 pip install pyodbc
 ```
 
+- SQLAlchemy
+```
+pip install SQLAlchemy
+```
+
+### Como é criado um exemplo simples de conexão?
+- Pyodbc
+```
+import pyodbc
+cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=localhost;DATABASE=testdb;UID=me;PWD=pass')
+cursor = cnxn.cursor()
+```
+
+- SQLAlchemy
+
 ```
 from typing import List
 from typing import Optional
@@ -77,4 +92,16 @@ row = cursor.fetchone()
 if row:
   print(row)
 ```
+- SQLAlchemy
+```
+from sqlalchemy import select
+
+session = Session(engine)
+
+stmt = select(User).where(User.name.in_(["spongebob", "sandy"]))
+
+for user in session.scalars(stmt):
+    print(user)
+```
+
 ### Bibliotecas: SQLAlchemy e Pyodbc
