@@ -7,7 +7,25 @@
 >Fornecer uma forma eficiente, flexível e de alto desempenho para interagir com bancos de dados relacionais usando a linguagem Python
 
 ### Que tipo de banco de dados ela permite acessar?
-
+- Pyodbc
+> Microsoft SQL Server
+> 
+> MySQL
+> 
+> PostgreSQL
+> 
+> Oracle
+> 
+> SQLite
+> 
+- SQLAlchemy
+> Microsoft SQL Server
+> 
+> MySQL
+> 
+> PostgreSQL
+> 
+> Oracle
 ### Ela é mais indicada para bancos relacionais ou não relacionais?
 - Pyodbc
 >Bancos relacionais
@@ -36,9 +54,7 @@ import pyodbc
 cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=localhost;DATABASE=testdb;UID=me;PWD=pass')
 cursor = cnxn.cursor()
 ```
-
 - SQLAlchemy
-
 ```
 from typing import List
 from typing import Optional
