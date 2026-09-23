@@ -14,4 +14,4 @@
 
 ### Como executar uma consulta *SELECT* simples?
 
-Bibliotecas: SQLAlchemy e Pyodbc
+### Bibliotecas: SQLAlchemy e Pyodbc
